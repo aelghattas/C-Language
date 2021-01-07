@@ -3,13 +3,20 @@
 main(){
     long reader;
     long str;
+    str = 0;
     while((reader = getchar())!=EOF){
-        if (reader == ' ')
+        if(reader != ' '){
             putchar(reader);
+        }else if (reader == ' ')
+        {
+            if(str == ' '){
 
-        else { 
-            putchar(reader);
+            }else
+            {
+                putchar(reader);
+            }
+            
         }
-        
+        str = reader;
     }
 }
