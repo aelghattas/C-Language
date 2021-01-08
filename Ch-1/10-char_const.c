@@ -10,6 +10,7 @@ main() {
     int c;
     while((c=getchar())!=EOF)
         printf("%d\n", c);
+        putchar('\n');
     // The program will return two outputs
     //The first is the ASCII constant of the input
     // and on another line it will return 10 which is the constant of Ent used to input
