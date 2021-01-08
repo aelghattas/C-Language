@@ -8,6 +8,16 @@ main(){
     int reader, state;
     state = OFF;
     while ((reader=getchar())!=EOF){
+        if (reader == '\t' || reader == ' ' || reader == '\n'){
+            if (state == ON){
+                putchar('\n');
+                state = OFF;
+            }
+        }else
+        {
+            putchar(reader);
+            state = ON;
+        }
         
     }
 }
